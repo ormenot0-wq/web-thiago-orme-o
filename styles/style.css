@@ -1,0 +1,188 @@
+/*regular 400*/
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap');
+/*font-family: "BBH Sans Hegarty", sans-serif;*/
+h1{/*propiedad: valor*/ 
+    margin-top: 10px; 
+    margin-right: 12px;
+    body {  font-family: "BBH Sans Hegarty", sans-serif; }
+color: rgb(0, 0, 0);
+
+font-size: 50px; margin: 16px;}
+
+   header img:last-of-type {
+  display: block;
+  margin-top: 20px; /* separa el título de la imagen */}
+p{
+    color: black;
+    font-size: 24px;
+    
+
+}
+footer-p{color: rgb(37, 1, 1);
+font-size: 12px;
+}
+ p:nth-child(1){
+    color:rgb(6, 0, 24)
+  }
+.p-italico{
+    font-style: italic;
+    font-weight: 900;
+    text-align: center;
+}
+nav{
+    display: flex;
+    gap: 50px;
+}
+  
+.li-nav{
+    list-style-type: none;
+}
+.a-nav{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+body {
+    background-color: rgb(255, 255, 255);
+  }
+ 
+  div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 450px;
+      height: 100;
+   }
+  img {
+    width: 250px;
+    margin: 200px;
+    padding: 5px;
+    color: black;
+  }
+  
+  h2{
+    width: 120px;
+    padding: 16px;
+    border: 3px solid black;
+  }
+  .cuadro{
+
+    margin: 16px;
+    padding: 8px;
+  }
+  .boton {
+    display: inline-block;
+    margin: 16px;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 8px;
+   text-decoration: none;
+   background-color: rgb(36, 207, 51);
+   color: black;
+  }
+  .boton:hover {
+    background-color: rgb(198, 245, 110);
+  }
+
+  .link-button:visited {
+      color: coral;
+  }
+ /* .contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end, espace evenly, space around;
+    flex-wrap: wrap;
+  }
+ div {
+    width: 300px;
+    height: 30px;
+    background-color: rgb(255, 120, 226);
+    font-size: 24px;
+    border: 5px solid black;
+
+  }*/
+
+  p:nth-child(3){
+    color:red
+  }
+  .vans-logo {
+ width: 80px;
+  }
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+    
+  .grid-container{
+     border: 1px solid black;
+     height: 100vh;
+      display: grid;
+     
+
+    grid-template-columns: 150px 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 150px);
+    align-items:center;
+    justify-items: center;
+    align-content: center;
+    justify-content: space-around;
+    gap: 24px;
+  }
+  .hijo {
+   justify-self: center;
+   align-self: center;
+  }
+  .titulos{
+    text-decoration: underline;
+  }
+  .titulo-servicios{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 24px; 
+    font-weight: bold;
+  }
+  
+  .parrafo-servicios {
+      color:grey;
+      font-style: italic;
+      font-size: 1.5em; /* relativa | al tamaño de fuente del 
+      elemento*/
+      font-weight: bold;
+      font-family: "BBH Sans Hegarty", sans-serif;
+  }
+
+  caja {
+    width: 50%;
+    height: 50vh;
+    background-color: lightcyan;
+    border: 2px solid rgb(243, 0, 0);
+    text-align: center;
+    line-height: 100px;
+    margin: 10px;
+  }
+  
+  .first {
+   flex-grow: 2;
+  }
+  .art1 {
+    color: green;
+  }
+  .art2{
+    color: red;
+  }
+  .bg-nav-propio{
+    background-color: rgb(231, 0, 77);
+  }
+   
