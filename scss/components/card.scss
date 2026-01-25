@@ -1,0 +1,9 @@
+@use '../utiles/mixins';
+.card-container {
+   @include mixins.flex(row, space-around, center)
+}
+.card {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+}

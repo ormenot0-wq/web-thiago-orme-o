@@ -1,0 +1,18 @@
+@use '../utiles/mixins';
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    li {
+        list-style-type: none;
+        .li-link{
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: green;
+                 text-decoration: underline;
+            }
+        }
+    }
+}

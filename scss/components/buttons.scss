@@ -1,0 +1,12 @@
+@use '../utiles/mixins';
+.main-button {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: rgb(32, 94, 63);
+}
+h1 {
+    background-image: linear-gradient(to left, white, black);
+}
