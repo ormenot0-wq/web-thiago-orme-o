@@ -18,7 +18,7 @@
 
      // console.log(resultado)
      console.log("hola")
-    return resultado
+   /* return resultado
    }
    //console.log("resultado de suma", suma())
    function concatenar(arg, arg2, arg3){
@@ -60,7 +60,7 @@
             console.warn("Error: operador inválido")
             return;
     };
-} ;/*
+} ;*//*
 const perro = {
     nombre: "michifus",
     castrado: false,
@@ -90,7 +90,7 @@ function perro(nombre, castrado, edad){
     }
       }*/ 
 
-      class gato{
+     /* class gato{
         constructor(nombre, castrado, edad){
             this.nombre = domingo
             this.castrado = castrado
@@ -126,7 +126,7 @@ function perro(nombre, castrado, edad){
 
       for(let i = 0; i<gatosnuevos.length; i++){
         gatosnuevos[i].mostrarDatos()
-      } 
+      } */
      
       /*console.log(localStorage)
       console.log(sessionStorage)*/
@@ -179,7 +179,7 @@ console.log(perro.edadmeses)
   
 perro.mostrarDatos()*/
 
-const perros ={
+//const perros ={
     nombre: "michifus",
     castrado: false,
     edad: 1,
@@ -191,7 +191,7 @@ const perros ={
     },
     mostrarDatos: function(){
         console.log('mi nombre es ${this.nombre}, ${this.color ? " ": "no"} estoy castrado y tengo ${this.edad} añitos')
-    }}/*{
+  /*  }}{
     nombre: "calsifer",
     castrado: false,
     edad: 1,
@@ -275,6 +275,9 @@ console.log(d20())
 console.log(d20())
 console.log(d20())*/
 
+
+
+
 function factorial(nro){
  nro = Math.floor(nro)
  console.log(nro)
@@ -286,14 +289,109 @@ console.log(factorial(4))
 console.log(factorial(7))
 
 const productos = [
-    { nombre:"", valor:0}
-    { nombre:"", valor:0}
-    { nombre:"", valor:0}
-    { nombre:"", valor:0}
-    { nombre:"", valor:0}
-    { nombre:"", valor:0}
+    { nombre:"🌮", valor:2},
+    { nombre:"🍅", valor:5},
+    { nombre:"🍖", valor:10},
+    { nombre:"🍇", valor:15},
+    { nombre:"🌭", valor:20},
+    { nombre:"🍔", valor:14},
 ]
+function aplicarFormulaProd(formula){
+    for(prod of productos){
+        formula(prod)
+    }
+}
+productos.forEach((element, indice) =>{console.log(indice,elemento)})
 
+const mostrarProd = ()=>{ let lista = "los productos son:"
+    productos.forEach((prod, index)=>{
+        lista+= '\n ${indice} - ${prod.nombre} a $${prod.valor}'
+    })
+}
+ mostrarProd()
+
+/* console.log(productos.find((elemento, indice) => elemento.valor<indice))
+ console.log(productos.find((elemento, indice) => elemento.valor>indice))
+ console.log(productos.find((elemento) => elemento.nombre==="🍖"))
+
+ console.log(productos.filter(elemento=>elemento.valor<=15))*/
+
+ /*console.log(productos.filter(prox=>prod.valor%5===0))
+ console.log(productos.some(prox=>prod.valor%5===0))*/
+
+ /*const prodInflacion = prodInflacion.map(function (elemento){
+    const nuevoProd = {nombre:elemento.nombre,valor:elemento.valor*1.5
+    }
+    return nuevoProd
+ })*/
+ //console.log(prodInflacion)
+ const mostrarProd = ()=>{
+    let lista = "los productos son:"
+    productos.forEach((prod, indice)=>{
+        lista+= '\n ${indice} - ${prod.nombre} a $${prod.valor}'
+    })
+    console.log(lista)
+    }
+
+ const canasta ={
+    productosCanasta: [],
+        total: 0,
+     mostrarCanasta: function(){
+    console.log(this.productosCanasta.reduce((total, elemento)=>{
+        return total + '\n - ${elemento.nombre} - $${elemento.valor} x ${elemento.cantidad}'
+    }, "los productos en canasta son:"))
+    },
+    agregarProdCanasta: function(prod,cantidad){
+            this.productosCanasta.push({...prod, cantidad:cantidad})
+            this.productosCanasta.sort((primerProd, segundoProd)=>{
+             // return segundoProd.cantidad * segundoProd.valor - primerProd.valor*primerProd.cantidad 
+            //},0)
+              return segundoProd.cantidad * segundoProd.valor() -primerProd.valor*primerProd.cantidad 
+             })
+            this.mostrarCanasta()
+        },
+      calcularTotal:function(){
+      //this.productosCanasta.reduce(funcion, valorinicial)
+     this.total = this.productosCanasta.reduce((total, elemento)=>{
+        console.log(elemento)
+        return total + elemento.valor*elemento.cantidad
+     }, 0)
+   },
+  
+ }
+console.log(canasta)
+ canasta.agregarPordCanasta(productos[1],14)
+  canasta.agregarPordCanasta(productos[2],2)
+   canasta.agregarPordCanasta(productos[6],20)
+   canasta.calcularTotal()
+   canasta.mostrarCanasta()
+
+   console.log(canasta)
+ 
+
+/*aplicarFormulaProd(console.log)
+
+    aplicarFormulaProd((productos)=>{
+        console.log('* ${producto.nombre} -  $${producto.valor}')
+    })
+
+aplicarFormulaProd(console.log)
+
+    aplicarFormulaProd((productos)=>{
+        console.log('* ${producto.nombre} -  $${producto.valor}')
+    })
+
+
+/*aplicarFormulaProd(console.log)
+
+aplicarFormulaProd((producto)=>{
+    console.log('* ${producto.nombre} - $${producto.valor}')
+})*/
+/*aplicarFormulaProd(console.log)
+
+aplicarFormulaProd((productos)=>{ prod=prod*2})
+
+aplicarFormulaProd(console.log)*/
 //
 /*const fibonacci = (n) => {
     if (n <= 1) {
@@ -330,4 +428,4 @@ const verificacionEnteros = (nro, funcion)=>{
     } else if(nro !== nroEnt){
         console.warn(`${nro} fue transformado a ${nroEnt}`)
     }
-}*/
+}*/ 

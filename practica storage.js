@@ -20,7 +20,7 @@ function evaluarModo(){
 console.log(modo)
 evaluarMod()
 console.log(modo)*/
- class gato{
+ /*class gato{
         constructor(nombre, castrado, edad){
             this.nombre = domingo
             this.castrado = castrado
@@ -46,12 +46,37 @@ console.log(modo)*/
       /*const gatosTemp = localStorage.getItem("gatos nuevos", gatosnuevos)
       for(const gato of gatosTemp){
         gatosnuevos.push(gato)*/
-      }
+     // }
      
 
-      function agregarGatos(nombre, castrado, edad){
+     /* function agregarGatos(nombre, castrado, edad){
         gatosnuevos.push(new gato(nombre, castrado, edad))
         localStorage.setItem("gatos nuevos", gatosnuevos)
       }
 
-      const d6 = dx()
+      const d6 = dx()*/
+
+      class Hamburgesa{
+       constructor(nombre, precio , ingredientes, nroCombo){
+        this.nombre = nombre;
+        this.precio = parseFloat(precio.toFixed(2));
+        this.ingredientes = ingredientes
+        this.nroCombo = parseInt(nroCombo)
+          }
+       }
+
+      const Hamburgesas = []
+
+      function agregarHarbugesa(nombre, precio, ingredientes, nroCombo){
+       Hamburgesas.push(new Hamburgesa(nombre, precio, ingredientes, nroCombo)) 
+      }
+
+      agregarHarbugesa("krusty burger", 150.00, ['carne', 'queso'], 1)
+     agregarHarbugesa("krusty burger doble", 225.00, ['carne', 'queso', 'panceta'], 2)
+     agregarHarbugesa("krusty pollo", 150.00, ['pollo', 'queso'], 3)
+     agregarHarbugesa("krusty mega balde de pollo", 140.00, ['pollo', 'queso', 'aderezo'], 4)
+     agregarHarbugesa("super krusty", 150.00, ['carne', 'queso', 'huevo'], 5)
+     agregarHarbugesa("super krusty triple", 205.00, ['carne', 'queso', 'huevo'], 7)
+     agregarHarbugesa("krusty vegan", 125.00, ['espinaca', 'soja'], 8)
+
+     console.table(Hamburgesas)
