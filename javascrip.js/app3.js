@@ -11,7 +11,7 @@ const segundaPreguntaRespuesta = "B"
 const terceraPreguntaRespuesta = "C"
 const cuartaPreguntaRespuesta = "B"
 // Texto preguntas
-const primerPreguntaTexto = "¿Qué animal tiene 1 pie? \n A | Caracol.\n B | Hornero\n C | Girafa \n D | Mollusco"
+const primerPreguntaTexto = "¿ servicios que nesesitas? \n A | soporte al cliente.\n B | olvido su clave de registro\n C | busca elgun producto \n D |"
 const segundaPreguntaTexto = "¿Que animal es más dañino al hombre? \n A | cocodrilo.\n B | ratas\n C | Jaguarete \n D | Vaca"
 const terceraPreguntaTexto = "¿Cuál animal es el que más se encuentra domesticado? \n A | Perro.\n B | gato\n C | Gallina \n D | Gato"
 const cuartaPreguntaTexto = "¿Cuál es el animal más rapido? \n A | Cheeta.\n B | Halcón Peregrino\n C | Pez espada \n D | Gacela de Thomson"
