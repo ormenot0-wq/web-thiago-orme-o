@@ -2,7 +2,7 @@
  
    function saludar(){
     let nombre = prompt("ingrese su nombre.")
-    while(typeof nombre !=="string" || nombre === ""){
+    while(typeof nombre !=="string" || nombre === "thiago"){
         nombre = prompt("por favor ingrese su nombre.")
     }
     const frase = 'bienvenido a mi sitio ${nombre}!'
@@ -14,7 +14,7 @@
     //const segundoNro = parseInt(prompt("ingrese otro numero entero"))
     const primerNro = 2
     const segundoNro = 8
-    const resultado = primerNro + segundoNro
+    const resultado = primerNro + segundoNro}
 
      // console.log(resultado)
      console.log("hola")
@@ -180,7 +180,7 @@ console.log(perro.edadmeses)
 perro.mostrarDatos()*/
 
 //const perros ={
-    nombre: "michifus",
+   /* nombre: "michifus",
     castrado: false,
     edad: 1,
     color: function(){
@@ -191,7 +191,7 @@ perro.mostrarDatos()*/
     },
     mostrarDatos: function(){
         console.log('mi nombre es ${this.nombre}, ${this.color ? " ": "no"} estoy castrado y tengo ${this.edad} añitos')
-  /*  }}{
+    }}*//*{
     nombre: "calsifer",
     castrado: false,
     edad: 1,
@@ -224,28 +224,28 @@ perro.mostrarDatos()*/
         this.edad = edad
     }*/
 
-   /* const verNombre = function(obj){
+    /*const verNombre = function(obj){
         return obj.nombre
     }
 
     console.log(verNombre(perro))*/
-//console.log(calculadora(21,2,"*"))
-//console.log(calculadora(21,2,"/"))
-//console.log(calculadora(21,2,"-"))
+/*console.log(calculadora(21,2,"*"))
+console.log(calculadora(21,2,"/"))
+console.log(calculadora(21,2,"-"))
 
-/*const hola = function (nombre){
+const hola = function (nombre){
     return 'hola ${nombre}'
-}*/
-//const hola =  (nombre , apellido)=> 'hola' ${nombre} ${apellido}
-   // return 'hola ${nombre}'
+}
+const hola =  (nombre , apellido)=> 'hola' ${nombre} ${apellido}
+    return 'hola ${nombre}'
 
 console.log(hola("thiago ormeño"))
-//hola = "a"
-//console.log(hola("thiago"))
+hola = "a"
+console.log(hola("thiago"))
 
-//console.log (calculadora(21,7,"-"))
+console.log (calculadora(21,7,"-"))
 
-//calculadora = "hola"
+calculadora = "hola"*/
 
 //console.log(calculadora)
 //console.log(calculadora(21,7,"-"))
@@ -325,13 +325,13 @@ const mostrarProd = ()=>{ let lista = "los productos son:"
     return nuevoProd
  })*/
  //console.log(prodInflacion)
- const mostrarProd = ()=>{
+ /*const mostrarProd = ()=>{
     let lista = "los productos son:"
     productos.forEach((prod, indice)=>{
         lista+= '\n ${indice} - ${prod.nombre} a $${prod.valor}'
     })
-    console.log(lista)
-    }
+    console.log(lista)*/
+    
 
  const canasta ={
     productosCanasta: [],
@@ -429,3 +429,62 @@ const verificacionEnteros = (nro, funcion)=>{
         console.warn(`${nro} fue transformado a ${nroEnt}`)
     }
 }*/ 
+/*console.log(1, "inicializando", "sincronico")
+
+setTimeout(()=>{
+   console.log(2, "pasaron 4 segundos", "sincronico")
+}, 8000)
+
+setTimeout(()=>{
+   console.log(3, "pasaron 4 segundos", "sincronico")
+    }, 4000)
+
+setTimeout(()=>{
+   console.log(4, "pasaron 4 segundos", "sincronico")
+    }, 0)
+
+console.log(5, "fin del codigo", "sincronico")*/
+
+/*const temporizador = setTimeout(()=>{
+    console.log(3, "pasaron 4 segundos", "asincronico")
+}, 4000)
+
+setTimeout(()=>{
+    console.log(2, "pasaron 8 segundos", "asincronico")
+}, 8000)
+ console.log(temporizador)
+ console.log("fremo temporizador")
+
+ clearTimeout(temporizador)*/
+
+ /*let segundero = 0
+ const cronometro = setInterval(()=>{
+    console.log('${++segundero}')
+ }, 1000)
+
+ setTimeout(()=>{
+    console.log("pasaron 10 segundos")
+    clearInterval(cronometro)
+ }, 10000)*/
+
+/*try{
+ console.log("hola")
+ //asd.metodo()//
+ console.log("chau")
+
+} catch (excepcion) {
+   console.warn("este es el error:",excepcion)
+} finally {
+    console.log("proceso finalizado")
+}*/
+
+/*try{
+ console.log("hola")
+ //const pedirDatos = asd.metodo()//
+ console.log("chau")
+
+} catch (excepcion) {
+   console.warn("este es el error:",excepcion)
+} */
+console.log
+ 

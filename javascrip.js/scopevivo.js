@@ -58,3 +58,10 @@ function bloque1(){ //bloque1
 
  divEncontrame.innerText= "te encontre"
  divEncontrame.innerHTML= "<button>apretame</button>"
+
+ Swal.fire({
+  title: 'gracias por comprar!',
+  text: 'Do you want to continue',
+  icon: 'error',
+  confirmButtonText: 'buelva pronto '
+})
